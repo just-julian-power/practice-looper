@@ -13,15 +13,29 @@
 
     <div class="player-card"> <!-- EMPTY WRAPPER DIV -->
 
-        <div class="video-wrapper"> <!-- WHERE THE API WILL INSERT THE CONTAINER-->
 
+            <label for="vlink">Video Link:</label>
+            <input type="text" id="vlink" name="vlink" required>
+            <button id="mySubmit">submit</button>
+            
+
+        <div class="video-wrapper"> <!-- WHERE THE API WILL INSERT THE CONTAINER-->
             <div class="player" id="player"></div>
-           
         </div>
+
+        <button id="setStart">Set Loop Start</button>
+        <label id="lStartTime">NONE</label>
+        
+        <button id="setEnd">Set Loop End</button>
+        <label id="lEndTime">NONE</label>
+        
+        <button id="resetLoop">Reset Loop</button>
+
     </div>
 
-    <script src ="https://www.youtube.com/iframe_api"></script>
     <script src ="script.js"></script>
+    <script src ="https://www.youtube.com/iframe_api"></script>
+    
 </body>
 
 </html>
